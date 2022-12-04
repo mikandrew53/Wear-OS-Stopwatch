@@ -11,26 +11,19 @@
     android:id="@+id/main"
     android:background="#b43939"
     >
-
-
-    <!--    <FrameLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:padding="@dimen/inner_frame_layout_padding"-->
-<!--        app:layout_boxedEdges="all">-->
-
-<!--        <TextView-->
-<!--            android:id="@+id/text"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="@string/hello_world" />-->
-
-<!--    </FrameLayout>-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="vertical">
+
+        <TextClock
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hh:mm:ss"
+            android:textSize="20sp"
+            android:id="@+id/currentTime"
+            android:layout_marginBottom="20dp"/>
 
         <Chronometer
             android:id="@+id/chronometer"
